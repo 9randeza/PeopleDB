@@ -10,7 +10,6 @@
 #include <QLineEdit>
 #include <vector>
 #include <string>
-#include <QMessageBox>
 
 class InterfaceDB :public DBManager
 {
@@ -19,7 +18,6 @@ private:
     QLabel *label_2;
     QLabel *labelName;
     QLabel *labelImage;
-    QPixmap* image = new QPixmap(":/Assets/miki.jpg");
     QStandardItemModel *model;
     QTableView *tableView;
     QGridLayout *grid;
@@ -34,7 +32,6 @@ public slots:
     void RemovePersonFunc();
     void RemoveAllPersonFunc();
     void PrintAllFunc();
-
 };
 
 
